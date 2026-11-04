@@ -1,0 +1,24 @@
+{
+  "name": "insta-dm-agent",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "scripts": {
+    "start": "bun run src/server.ts",
+    "dev": "bun --watch run src/server.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "eval": "bun run scripts/eval.ts",
+    "tunnel": "cloudflared tunnel --no-autoupdate --url http://localhost:3000"
+  }
+}
