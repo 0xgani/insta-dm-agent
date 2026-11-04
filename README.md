@@ -44,6 +44,7 @@ cloudflared tunnel run --url http://localhost:3000 insta-bot
 
 This uses **Instagram API with Facebook Login** (`INSTAGRAM_AUTH_MODE=facebook`). The
 Instagram account must be a professional (Business/Creator) account linked to a Facebook Page.
+A **verified Meta Business account** is required before the app can go Live for public use.
 
 1. **developers.facebook.com → your app → Use cases → Instagram API → API setup with Facebook login.**
 2. **Token:** in Graph API Explorer, pick the app and generate a *User* token with
